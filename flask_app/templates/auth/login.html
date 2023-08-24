@@ -1,0 +1,22 @@
+    {% extends "/shared/layout.html" %}
+    
+    {% block content %}
+<form action="/register" method="post">
+    {{ form.csrf_token }}
+    <div class="m-3">
+    {{ form.email.label(class = "form-label") }}
+    {{ form.email(class = "form-control") }}
+    </div>
+    <div class="m-3">
+    {{ form.password.label(class = "form-label") }}
+    {{ form.password(class = "form-con  trol") }}
+    </div>
+    <div class="m-3">
+    <button type="submit" class="m-3 btn btn-primary">Register</button>
+    </div>
+    <div class="m-3">
+    <p>Don't have an account? <a href="/auth/register">Register Now</a></p>
+    </div>
+    </form>
+    
+    {% endblock content %}

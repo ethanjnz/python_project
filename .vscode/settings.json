@@ -12,6 +12,7 @@
 */
 
 {
+    "[jinja-html]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
     "[python]": {
       "diffEditor.ignoreTrimWhitespace": false,
       "editor.defaultFormatter": "ms-python.black-formatter",
